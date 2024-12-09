@@ -1,7 +1,7 @@
 {
  description = "Base system for raspberry pi 4";
  inputs = {
-   nixpkgs.url = "nixpkgs/nixos-23.11";
+   nixpkgs.url = "nixpkgs/nixos-unstable";
    nixos-generators = {
      url = "github:nix-community/nixos-generators";
      inputs.nixpkgs.follows = "nixpkgs";
@@ -15,7 +15,7 @@
        disabledModules = [
          "profiles/base.nix"
        ];
-       system.stateVersion = "23.11";
+       system.stateVersion = "unstable";
      };
      users = {
        users.users = {
