@@ -1,0 +1,35 @@
+# Cursor Rules for Flake Standards
+
+## Use Standard Flakes
+
+- Always prefer built-in or widely-used Flakes from the ecosystem over custom implementations
+- Consult the standard Flake library before creating new ones
+- Document any deviation from standard Flakes with clear justification
+
+## Modularization Requirements
+
+- Each Flake must be implemented in its own dedicated file
+- No Flake should have multiple responsibilities or purposes
+- Follow single responsibility principle for all Flake implementations
+- Name Flake files consistently: `<purpose>_flake.py`
+
+## Organization Standards
+
+- Group related Flakes in appropriate subdirectories
+- Maintain a clear directory structure for different types of Flakes
+- Include a README in each Flake directory explaining its contents
+- Follow consistent naming conventions across all Flake files
+
+## Flake Data Standards
+
+- Use standard Flake library providers when available
+- Create custom Flakes only when standard providers are insufficient
+- Document all custom Flake data generators
+- Maintain reusable Flake data factories in a dedicated module
+
+## Implementation Patterns
+
+- Follow established Flake patterns from the community
+- Maintain consistent interface across similar Flakes
+- Use standard method names and signatures
+- Implement proper error handling and validation
